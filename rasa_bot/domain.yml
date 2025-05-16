@@ -1,0 +1,17 @@
+
+version: "3.1"
+
+intents:
+  - greet
+  - query_incidents
+  - generate_report
+
+responses:
+  utter_greet:
+    - text: "👋 Bonjour, je suis l’assistant IA du SIEM. Comment puis-je vous aider aujourd’hui ?"
+  utter_default:
+    - text: "Je suis désolé, je n’ai pas compris. Pouvez-vous reformuler ?"
+
+actions:
+  - action_query_incidents
+  - action_generate_report

@@ -1,0 +1,18 @@
+
+version: "3.1"
+
+rules:
+- rule: Greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Query incidents
+  steps:
+    - intent: query_incidents
+    - action: action_query_incidents
+
+- rule: Generate report
+  steps:
+    - intent: generate_report
+    - action: action_generate_report

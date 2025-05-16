@@ -1,0 +1,23 @@
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Salut
+    - Bonjour
+    - Hello
+    - Hey
+
+- intent: query_incidents
+  examples: |
+    - Montre-moi les derniers incidents
+    - Quels sont les incidents critiques ?
+    - As-tu trouvé des alertes aujourd’hui ?
+    - Logs de sécurité récents ?
+
+- intent: generate_report
+  examples: |
+    - Génère un rapport de sécurité
+    - Crée un rapport journalier
+    - Je veux un résumé des incidents
